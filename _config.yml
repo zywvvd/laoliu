@@ -3,18 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 崂山六村疫情信息
-subtitle: ''
-description: '汇总发布崂六疫情相关信息'
-keywords: '上海加油'
-author: 403
+title: 又见苍岚
+subtitle: 'www.zywvvd.com'
+description: 'Stay hungury ! Stay foolish ！'
+keywords: '人工智能, 深度学习, 个人博客, 机器学习'
+author: Yiwei Zhang
 #language: zh-Hans  # language for Next
 language: zh-CN    # language for fluid / matery
 timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://zywvvd.gitee.io/
+url: https://www.zywvvd.com/
 root: /
 #permalink: :year/:month/:day/:title/
 permalink: :title/
@@ -33,6 +33,7 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
     - nodeppt/**
+    - storage_md/**
     - vvd_js/**
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -154,6 +155,7 @@ feed:
   content_limit_delim: ' '
   order_by: -date
 
+
 baidu_url_submit:
   count: 2              # 提交最新的多少个链接
   host: www.zywvvd.com    # 在百度站长平台中添加的域名
@@ -166,9 +168,9 @@ baidu_url_submit:
 deploy:
 - type: git
   #repo: git@github.com:zywvvd/vvd_hexo_public_fluid.git
-  repo: git@gitee.com:zywvvd/zywvvd.git
+  repo: git@github.com:zywvvd/zywvvd.github.io
   branch: master
-- type: baidu_url_submitter    
+- type: baidu_url_submitter      
 
 # Search 
 search:
