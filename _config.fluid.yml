@@ -16,8 +16,6 @@
 # Global
 #---------------------------
 
-avatar: /image/avatar.png
-
 # 用于浏览器标签的图标
 # Icon for browser tab
 favicon: /img/favicon.png
@@ -115,14 +113,6 @@ fun_features:
     # See: https://github.com/rstacruz/nprogress
     options: { showSpinner: false, trickleSpeed: 100 }
 
-  monitortext:
-    enable: true
-    text: 明眸如初
-
-  snow: 
-    enable: false # 是否开启背景飘雪效果
-    color: rgba(255, 255, 255, 0.7) # 雪花颜色
-
 # 主题暗色模式，开启后菜单中会出现切换按钮，用户浏览器会存储切换选项，并且会遵循 prefers-color-scheme 自动切换
 # Theme dark mode. If enable, a switch button will appear on the menu, each of the visitor's browser will store his switch option
 dark_mode:
@@ -152,9 +142,6 @@ color:
   # Color of navigation bar text
   navbar_text_color: "#fff"
   navbar_text_color_dark: "#d0d0d0"
-
-  # 侧边栏颜色
-  sidebar_text_color: "#3c4858"
 
   # 全局字体色
   # Color of global text
@@ -298,7 +285,7 @@ iconfont: //at.alicdn.com/t/font_1736178_kmeydafke9r.css
 navbar:
   # 导航栏左侧的标题，为空则按 hexo config 中 `title` 显示
   # The title on the left side of the navigation bar. If empty, it is based on `title` in hexo config
-  blog_title: "CangLan"
+  blog_title: "LaoShan"
 
   # 导航栏毛玻璃特效，实验性功能，可能会造成页面滚动掉帧和抖动，部分浏览器不支持会自动不生效
   # Navigation bar frosted glass special animation. It is an experimental feature
@@ -403,7 +390,7 @@ footer:
   # 展示网站的 PV、UV 统计数
   # Display website PV and UV statistics
   statistics:
-    enable: true
+    enable: false
 
     # 统计数据来源，使用 leancloud 需要设置 `web_analytics: leancloud` 中的参数；使用 busuanzi 不需要额外设置，但是有时不稳定，另外本地运行时 busuanzi 显示统计数据很大属于正常现象，部署后会正常
     # Data source. If use leancloud, you need to set the parameter in `web_analytics: leancloud`
@@ -459,7 +446,7 @@ index:
 
     # 为空则按 hexo config.subtitle 显示
     # If empty, text based on `subtitle` in hexo config
-    text: "明眸如初，又见苍岚"
+    text: "崂山六村疫情信息发布"
 
     # 通过 API 接口作为首页副标题的内容，必须返回的是 JSON 格式，如果请求失败则按 text 字段显示，该功能必须先开启 typing 打字机功能
     # Subtitle of the homepage through the API, must be returned a JSON. If the request fails, it will be displayed in `text` value. This feature must first enable the typing animation
@@ -557,7 +544,7 @@ post:
     # 浏览量计数
     # Number of visits
     views:
-      enable: true
+      enable: false
       # 统计数据来源
       # Data Source
       # Options: busuanzi | leancloud
@@ -948,19 +935,6 @@ links:
     # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo | cusdis
     type: disqus
 
-#---------------------------
-# 侧边栏
-# Sidebar
-#---------------------------
-sidebar:
-    enable: true
-    name:  # 名字，留空则使用网站title
-    introduce:  # 支持 HTML，留空则使用网站subtitle
-    icons: # 更多图标可从 https://fontawesome.com/v4.7.0/icons/ 查找，并以 "图标名: url" 的格式添加在下方
-        "fab fa-github": https://github.com
-        "fab fa-twitter": https://twitter.com
-        "fas fa-envelope": mailto:example@example.com
-
 
 #---------------------------
 # 以下是配置 JS CSS 等静态资源的 URL 前缀，可以自定义成 CDN 地址，
@@ -973,56 +947,6 @@ sidebar:
 #---------------------------
 
 static_prefix:
-  # 内部静态
-  # Internal static
-  internal_js: /js
-  internal_css: /css
-  internal_img: /img
-
-  anchor: https://cdn.staticfile.org/anchor-js/4.3.1/
-
-  github_markdown: https://cdn.staticfile.org/github-markdown-css/4.0.0/
-
-  jquery: https://cdn.staticfile.org/jquery/3.6.0/
-
-  bootstrap: https://cdn.staticfile.org/twitter-bootstrap/4.6.1/
-
-  highlightjs: https://cdn.staticfile.org/highlight.js/10.7.2/
-
-  prismjs: https://cdn.staticfile.org/prism/1.26.0/
-
-  tocbot: https://cdn.staticfile.org/tocbot/4.18.0/
-
-  typed: https://cdn.staticfile.org/typed.js/2.0.12/
-
-  fancybox: https://cdn.staticfile.org/fancybox/3.5.7/
-
-  nprogress: https://cdn.staticfile.org/nprogress/0.2.0/
-
-  mathjax: https://cdn.staticfile.org/mathjax/3.2.0/es5/
-
-  katex: https://cdn.staticfile.org/KaTeX/0.15.2/
-
-  busuanzi: https://busuanzi.ibruce.info/busuanzi/2.3/
-
-  clipboard: https://cdn.staticfile.org/clipboard.js/2.0.10/
-
-  mermaid: https://cdn.staticfile.org/mermaid/8.13.10/
-
-  valine: https://cdn.staticfile.org/valine/1.4.16/
-
-  waline: https://cdn.staticfile.org/waline/1.5.2/
-
-  gitalk: https://cdn.staticfile.org/gitalk/1.7.2/
-
-  disqusjs: https://cdn.staticfile.org/disqusjs/1.3.0/
-
-  twikoo: https://cdn.staticfile.org/twikoo/1.4.17/
-
-  hint: https://cdn.staticfile.org/hint.css/2.7.0/
-
-
-static_prefix_old:
   # 内部静态
   # Internal static
   internal_js: /js
