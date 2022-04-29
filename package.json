@@ -2,6 +2,12 @@
   "name": "hexo-site",
   "version": "0.0.0",
   "private": true,
+  "scripts": {
+    "build": "hexo generate",
+    "clean": "hexo clean",
+    "deploy": "hexo deploy",
+    "server": "hexo server"
+  },
   "hexo": {
     "version": "5.4.0"
   },
@@ -37,9 +43,5 @@
   "devDependencies": {
     "hexo-generator-baidu-sitemap": "^0.1.6",
     "hexo-generator-sitemap": "^2.0.0"
-  },
-  "scripts": {
-    "dev": "hexo server -p $PORT",
-    "build": "hexo generate"
   }
 }
