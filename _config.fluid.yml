@@ -113,6 +113,14 @@ fun_features:
     # See: https://github.com/rstacruz/nprogress
     options: { showSpinner: false, trickleSpeed: 100 }
 
+  monitortext:
+    enable: true
+    text: 明眸如初
+
+  snow: 
+    enable: false # 是否开启背景飘雪效果
+    color: rgba(255, 255, 255, 0.7) # 雪花颜色
+
 # 主题暗色模式，开启后菜单中会出现切换按钮，用户浏览器会存储切换选项，并且会遵循 prefers-color-scheme 自动切换
 # Theme dark mode. If enable, a switch button will appear on the menu, each of the visitor's browser will store his switch option
 dark_mode:
